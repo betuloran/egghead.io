@@ -105,7 +105,7 @@ body {
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 14px;
     -webkit-font-smoothing: antialiased;
-    background-color: #F4F7F9;
+    background-color: #e8eaff;
 }
 
 ol,
@@ -319,8 +319,8 @@ img {
 }
 
 .section1 .lang a {
-    width: 184px;
-    height: 184px;
+    width: 180px;
+    height: 180px;
     background-color: #fff;
     border-radius: 4px;
     margin-bottom: 24px;
@@ -351,13 +351,13 @@ img {
 }
 
 .section1 .inner h3 {
-    font-size: 36px;
+    font-size: 30px;
     color: #111;
     margin-bottom: 30px;
 }
 
 .section1 .inner p {
-    font-size: 18px;
+    font-size: 17px;
     margin-bottom: 20px;
     line-height: 28px;
 }
@@ -365,4 +365,35 @@ img {
 .section1 .inner .you-can {
     display: flex;
     flex-direction: column;
+}
+
+/* SECTİON2 PART */
+.section2 {
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1);
+    background: #fff;
+    padding: 64px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 .icon {
+    background: #f4f5f9;
+    border-radius: 50%;
+    width: 56px;
+    height: 56px;
+    text-align: center;
+    line-height: 56px;
+    color: #d2dbe7;
+    font-size: 22px;
+    margin-bottom: 32px;
+}
+
+.section2 p {
+    font-family: georgia, times, serif;
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    max-width: 60%;
+    line-height: 30px;
 }
