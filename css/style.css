@@ -104,6 +104,8 @@ body {
     line-height: 1;
     font-family: ui-sans-serif, system-ui, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
     font-size: 14px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #F4F7F9;
 }
 
 ol,
@@ -153,7 +155,8 @@ img {
 .header {
     background-color: rgb(17 24 39);
 }
-.btn{
+
+.btn {
     display: inline-block;
     height: 50px;
     line-height: 50px;
@@ -162,12 +165,14 @@ img {
     border-radius: 4px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight:500;
-    background-color:rgba(255, 255, 255, .9);
+    font-weight: 500;
+    background-color: rgba(255, 255, 255, .9);
 }
-.btn:hover{
+
+.btn:hover {
     background-color: #fff;
 }
+
 .header .logo {
     display: flex;
     align-items: center;
@@ -283,7 +288,7 @@ img {
 .banner .container .banner-box h1 {
     color: #fff;
     font-size: 48px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 56px;
 }
 
@@ -294,6 +299,70 @@ img {
     padding: 25px 0 40px;
 }
 
-.banner .container .banner-box button {
+.banner .container .banner-box btn {
     margin-top: 65px;
+}
+
+/* SECTİON1 PART */
+.section1 {
+    display: flex;
+    padding: 120px 0;
+    align-items: center;
+}
+
+.section1 .lang {
+    display: flex;
+    width: 392px;
+    flex-wrap: wrap;
+    min-width: 392px;
+    justify-content: space-between;
+}
+
+.section1 .lang a {
+    width: 184px;
+    height: 184px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px -5px rgba(0, 0, 0, .1);
+    transition: 200ms all;
+}
+
+.section1 .lang a:hover {
+    transform: scale(1.05);
+}
+
+.section1 .lang a img {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.section1 .lang a .title {
+    font-size: 16px;
+    color: #111;
+}
+
+.section1 .inner {
+    padding-left: 160px;
+}
+
+.section1 .inner h3 {
+    font-size: 36px;
+    color: #111;
+    margin-bottom: 30px;
+}
+
+.section1 .inner p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    line-height: 28px;
+}
+
+.section1 .inner .you-can {
+    display: flex;
+    flex-direction: column;
 }
