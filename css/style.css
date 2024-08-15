@@ -83,6 +83,7 @@ video {
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    box-sizing: border-box;
 }
 
 article,
@@ -152,7 +153,21 @@ img {
 .header {
     background-color: rgb(17 24 39);
 }
-
+.btn{
+    display: inline-block;
+    height: 50px;
+    line-height: 50px;
+    padding: 0 20px;
+    color: black;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight:500;
+    background-color:rgba(255, 255, 255, .9);
+}
+.btn:hover{
+    background-color: #fff;
+}
 .header .logo {
     display: flex;
     align-items: center;
@@ -167,7 +182,8 @@ img {
     display: flex;
     align-items: center;
 }
-.header .menu ul li a i{
+
+.header .menu ul li a i {
     margin-right: 10px;
 }
 
@@ -206,29 +222,78 @@ img {
     padding: 0 10px;
     background: #21252d;
 }
-.header .search input::placeholder{
+
+.header .search input::placeholder {
     color: rgba(255, 255, 255, .6);
 }
-.header .search button{
+
+.header .search button {
     width: 32px;
-    height:34px;
+    height: 34px;
     background: #21252d;
     color: #fff;
     cursor: pointer;
 }
-.header .search button:hover{
+
+.header .search button:hover {
     background-color: #316aff;
 }
-.header .login-buttons ul{
+
+.header .login-buttons ul {
     display: flex;
 }
-.header .login-buttons ul li a{
+
+.header .login-buttons ul li a {
     height: 34px;
     display: block;
     line-height: 34px;
     padding: 0 15px;
     color: #fff;
 }
-.header .login-buttons ul li a:hover{
+
+.header .login-buttons ul li a:hover {
     color: rgba(255, 255, 255, .6);
+}
+
+/* BANNER SECTİON PART START */
+.banner {
+    background: linear-gradient(170deg, #212A39, #3333CC);
+}
+
+.banner .container {
+    min-height: 50vh;
+    display: flex;
+    padding: 50px 0;
+    align-items: center;
+}
+
+.banner .container .banner-box {
+    width: 50%;
+
+}
+
+.banner .container .banner-box img {
+    max-width: 100%;
+}
+
+.banner .container .banner-box.banner-image {
+    padding-left: 150px;
+}
+
+.banner .container .banner-box h1 {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 56px;
+}
+
+.banner .container .banner-box h2 {
+    font-size: 1.25rem;
+    color: #FBBF24;
+    font-size: 20px;
+    padding: 25px 0 40px;
+}
+
+.banner .container .banner-box button {
+    margin-top: 65px;
 }
